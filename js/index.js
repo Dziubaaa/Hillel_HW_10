@@ -16,15 +16,12 @@ function pow (num, degree) {
     return num * pow(num, degree - 1)
 }
 
-let num = parseFloat(prompt("Введіть число: "));
-let degree = parseInt(prompt("Введіть ступінь: "));
+const num = parseFloat(prompt("Введіть число: "));
+const degree = parseInt(prompt("Введіть ступінь: "));
 
 if (isNaN(num) || isNaN(degree)) {
     alert("Введено некоректні дані.");
 } else {
-    let result = pow(num, degree);
+    const result = pow(num, degree);
     console.log(`${num}^${degree} = ${result}.`);
 }
-
-
-
